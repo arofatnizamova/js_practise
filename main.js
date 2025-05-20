@@ -1,1 +1,1 @@
-import * as modal from './modal.js';
+import * as modal from './scripts/modal.js';
