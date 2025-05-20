@@ -1,0 +1,104 @@
+.open-modal-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 191, 233);
+    color: rgb(68, 68, 68);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all 0.3s ease;
+}
+
+.open-modal-btn:hover {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    background: rgb(248, 214, 243);
+    visibility: hidden;
+    opacity: 0;
+    /* Начальное состояние - скрыто */
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+}
+
+.modal.hide {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.1);
+}
+
+
+/* Добавляем стили для оверлея */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 2;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.overlay.hide {
+    display: none;
+}
+
+.modal-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-blue {
+    margin-left: 20px;
+    background: rgb(106, 205, 255);
+}
+
+.modal-blue {
+    background: rgb(106, 205, 255);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модалка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="open-modal-btn" data-target="modal_1">Нажми на меня</button>
+        <button class="open-modal-btn btn-blue" data-target="modal_2">Нажми на меня</button>
+    </div>
+    <!-- Добавляем оверлей -->
+    <div class="overlay hide"></div>
+    <div id="modal_1" class="modal hide">
+        <div class="modal-container">
+            <button class="close-button ">x</button>
+            <h3>Привет, я модалка</h3>
+        </div>
+    </div>
+    <div id="modal_2" class="modal modal-blue hide">
+        <div class="modal-container">
+            <button class="close-button ">x</button>
+            <h3>Привет, я вторая модалка~</h3>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
